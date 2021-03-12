@@ -1,9 +1,6 @@
 
-@import "node_modules/@fortawesome/fontawesome-free/css/all.css";
-@import "node_modules/fontsource-roboto/latin-400.css";
-@import "node_modules/fontsource-roboto/latin-700.css";
-@import "node_modules/fontsource-roboto-mono/latin-400.css";
-@import "node_modules/fontsource-roboto-mono/latin-700.css";
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap";
 
 body {
     font-family: "Roboto", sans-serif;
