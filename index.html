@@ -57,33 +57,37 @@
         <h1>Memory</h1>
         <div id="mem" class="tbl-wrapper">
             <table>
-                <tr class="heading">
-                    <th>Address</th>
-                    <th>0</th> <th>1</th> <th>2</th> <th>3</th>
-                    <th>
-                        <select id="alt-mem-view-sel">
-                            <option value="asm" selected>Instructions</option>
-                            <option value="pseudo">Pseudo-instructions</option>
-                            <option value="ascii">Characters (ASCII)</option>
-                            <option value="int32">Decimal (signed 32-bit)</option>
-                            <option value="uint32">Decimal (unsigned 32-bit)</option>
-                            <option value="int16">Decimal (signed 16-bit)</option>
-                            <option value="uint16">Decimal (unsigned 16-bit)</option>
-                            <option value="int8">Decimal (signed 8-bit)</option>
-                            <option value="uint8">Decimal (unsigned 8-bit)</option>
-                        </select>
-                    </th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <th>00000000</th>
-                    <td class="reg">00</td>
-                    <td class="reg">00</td>
-                    <td class="reg">00</td>
-                    <td class="reg">00</td>
-                    <td class="asm">&mdash;</td>
-                    <td class="brk" title="Click to set/remove a breakpoint">&#x25cf;</td>
-                </tr>
+                <thead>
+                    <tr class="heading">
+                        <th>Address</th>
+                        <th>0</th> <th>1</th> <th>2</th> <th>3</th>
+                        <th>
+                            <select id="alt-mem-view-sel">
+                                <option value="asm" selected>Instructions</option>
+                                <option value="pseudo">Pseudo-instructions</option>
+                                <option value="ascii">Characters (ASCII)</option>
+                                <option value="int32">Decimal (signed 32-bit)</option>
+                                <option value="uint32">Decimal (unsigned 32-bit)</option>
+                                <option value="int16">Decimal (signed 16-bit)</option>
+                                <option value="uint16">Decimal (unsigned 16-bit)</option>
+                                <option value="int8">Decimal (signed 8-bit)</option>
+                                <option value="uint8">Decimal (unsigned 8-bit)</option>
+                            </select>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>00000000</th>
+                        <td class="reg">00</td>
+                        <td class="reg">00</td>
+                        <td class="reg">00</td>
+                        <td class="reg">00</td>
+                        <td class="asm">&mdash;</td>
+                        <td class="brk" title="Click to set/remove a breakpoint">&#x25cf;</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -156,15 +160,17 @@
             <tr> <th>x8</th>  <td class="reg" id="x8"></td>  </tr>
             <tr id="xrd" class="overlay"></tr>
             <tr> <th>x9</th>  <td class="reg" id="x9"></td>  </tr>
-            <tr> <th>x10</td> <td class="reg" id="x10"></td> </tr>
-            <tr> <th>x11</td> <td class="reg" id="x11"></td> </tr>
-            <tr> <th>x12</td> <td class="reg" id="x12"></td> </tr>
-            <tr> <th>x13</td> <td class="reg" id="x13"></td> </tr>
-            <tr> <th>x14</td> <td class="reg" id="x14"></td> </tr>
-            <tr> <th>x15</td> <td class="reg" id="x15"></td> </tr>
+            <tr> <th>x10</th> <td class="reg" id="x10"></td> </tr>
+            <tr> <th>x11</th> <td class="reg" id="x11"></td> </tr>
+            <tr> <th>x12</th> <td class="reg" id="x12"></td> </tr>
+            <tr> <th>x13</th> <td class="reg" id="x13"></td> </tr>
+            <tr> <th>x14</th> <td class="reg" id="x14"></td> </tr>
+            <tr> <th>x15</th> <td class="reg" id="x15"></td> </tr>
         </table>
     </div>
 </div>
+
+<hr class="divider">
 
 <div class="io">
     <div class="cell">
@@ -242,16 +248,18 @@
 
         <canvas id="bitmap-output" width="160" height="160"></canvas>
     </div>
-    <div class="cell branding">
-        <div>
-            <img id="emulsiv-logo" src="assets/emulsiV-logo.svg" alt="emulsiV">
+    <div class="cell">
+        <div class="branding">
+            <div>
+                <img id="emulsiv-logo" src="assets/emulsiV-logo.svg" alt="emulsiV">
+            </div>
+            <ul class="links">
+                <li><a href="doc/" target="_blank"><i class="fas fa-info-circle"></i> About emulsiV</a></li>
+                <li><a href="https://github.com/Guillaume-Savaton-ESEO/emulsiV" target="_blank"><i class="fab fa-github"></i> Get the source code</a></li>
+                <li><a href="https://github.com/Guillaume-Savaton-ESEO/emulsiV/issues" target="_blank"><i class="fas fa-exclamation-circle"></i> Report issues</a></li>
+                <li><a href="https://eseo.fr" target="_blank"><img id="eseo-logo" src="assets/ESEO-logo.svg" alt="ESEO - Innovation makes sense"></a></li>
+            </ul>
         </div>
-        <ul class="links">
-            <li><a href="doc" target="_blank"><i class="fas fa-info-circle"></i> About emulsiV</a></li>
-            <li><a href="https://github.com/Guillaume-Savaton-ESEO/emulsiV" target="_blank"><i class="fab fa-github"></i> Get the source code</a></li>
-            <li><a href="https://github.com/Guillaume-Savaton-ESEO/emulsiV/issues" target="_blank"><i class="fas fa-exclamation-circle"></i> Report issues</a></li>
-            <li><a href="https://eseo.fr" target="_blank"><img id="eseo-logo" src="assets/ESEO-logo.svg" alt="ESEO - Innovation makes sense"></a></li>
-        </ul>
     </div>
 </div>
 
